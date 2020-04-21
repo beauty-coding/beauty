@@ -1,0 +1,37 @@
+version: "3" #版本号
+services:
+#  服务名
+  eureka0:
+    image: eureka:0.1  #使用的镜像
+    ports:
+      - "60010:60010"  #暴露的端口信息和docker run -d -p 80:80 一样
+    restart: "always" #重启策略，能够使服务保持始终运行，生产环境推荐使用
+    container_name: eureka0 #容器名称
+    environment:
+      spring.profiles.active: dev0
+    build: ./registcenter
+  eureka1:
+    image: eureka:0.1  #使用的镜像
+    ports:
+      - "60011:60011"  #暴露的端口信息和docker run -d -p 80:80 一样
+    restart: "always" #重启策略，能够使服务保持始终运行，生产环境推荐使用
+    container_name: eureka1 #容器名称
+    environment:
+      spring.profiles.active: dev1
+    build: ./registcenter
+  eureka2:
+    image: eureka:0.1  #使用的镜像
+    ports:
+      - "60012:60012"  #暴露的端口信息和docker run -d -p 80:80 一样
+    restart: "always" #重启策略，能够使服务保持始终运行，生产环境推荐使用
+    container_name: eureka2 #容器名称
+    environment:
+      spring.profiles.active: dev2
+    build: ./registcenter
+  router:
+    image: router:0.1  #使用的镜像
+    ports:
+      - "60020:60020"  #暴露的端口信息和docker run -d -p 80:80 一样
+    restart: "always" #重启策略，能够使服务保持始终运行，生产环境推荐使用
+    container_name: router #容器名称
+    build: ./router

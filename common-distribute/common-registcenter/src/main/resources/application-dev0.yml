@@ -1,0 +1,27 @@
+# server
+server:
+  port: 60010
+#  spring
+spring:
+  application:
+    name: eureka-server
+#  security:
+#    user:
+#      name: admin
+#      password: 123456
+
+# eureka
+eureka:
+  instance:
+    hostname: eureka0
+  client:
+    # false表示自己端就是注册中心，我的职责就是维护服务实例，并不需要去检索服务
+    fetch-registry: true
+    # false表示不向注册中心注册自己。
+    register-with-eureka: true
+    serviceUrl:
+      defaultZone: http://eureka2:60012/eureka, http://eureka1:60011/eureka, http://eureka0:60010/eureka
+
+
+
+

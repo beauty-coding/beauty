@@ -1,0 +1,66 @@
+version: "3" #版本号
+services:
+#  服务名
+  
+  redis-master0:
+    image: redis:latest #使用的镜像
+    container_name: redis-master0 #容器名称
+    environment: # 环境变量
+       PORT: 6380 # 跟 config/nodes-6391.conf 里的配置一样的端口
+    privileged: true # 拥有容器内命令执行的权限
+    ports:
+      - "6380:6380"
+      - "16380:16380"
+
+  redis-master1:
+    image: redis:latest #使用的镜像
+    container_name: redis-master1 #容器名称
+    environment: # 环境变量
+        PORT: 6381 # 跟 config/nodes-6391.conf 里的配置一样的端口
+    privileged: true # 拥有容器内命令执行的权限
+    ports:
+      - "6381:6381"
+      - "16381:16381"
+
+  redis-master2:
+    image: redis:latest #使用的镜像
+    container_name: redis-master2 #容器名称
+    environment: # 环境变量
+        PORT: 6382 # 跟 config/nodes-6391.conf 里的配置一样的端口
+    privileged: true # 拥有容器内命令执行的权限
+    ports:
+      - "6382:6382"
+      - "16382:16382"
+
+  redis-slave0:
+    image: redis:latest #使用的镜像
+    container_name: redis-slave0 #容器名称
+    environment: # 环境变量
+        PORT: 6383 # 跟 config/nodes-6391.conf 里的配置一样的端口
+    privileged: true # 拥有容器内命令执行的权限
+    ports:
+      - "6383:6383"
+      - "16383:16383"
+
+  redis-slave1:
+    image: redis:latest #使用的镜像
+    container_name: redis-slave1 #容器名称
+    environment: # 环境变量
+        PORT: 6384 # 跟 config/nodes-6391.conf 里的配置一样的端口
+    privileged: true # 拥有容器内命令执行的权限
+    ports:
+      - "6384:6384"
+      - "16384:16384"
+
+      
+  redis-slave2:
+    image: redis:latest #使用的镜像
+    container_name: redis-slave2 #容器名称
+    environment: # 环境变量
+        PORT: 6385 # 跟 config/nodes-6391.conf 里的配置一样的端口
+    privileged: true # 拥有容器内命令执行的权限
+    ports:
+      - "6385:6385"
+      - "16385:16385"
+
+      
