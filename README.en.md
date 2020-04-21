@@ -17,7 +17,24 @@ Software architecture description
 
 #### Instructions
 
-1.  xxxx
+##### 1.  tech-stack
+spring cloud
+    - eureka
+    - config
+    - openfeign
+    - bus
+    - zipkin
+    - hytrix
+    - gateway
+- mysql
+-  redis
+-  es
+- kafka
+-  seata
+-  redis redisson（zookeeper）
+- 分sharding
+-  docker  k8s
+
 2.  xxxx
 3.  xxxx
 

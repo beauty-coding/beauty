@@ -18,8 +18,44 @@ java私有仓库，
 
 #### 使用说明
 
-1.  xxxx
-2.  xxxx
+##### 1.  技术栈
+spring cloud
+    - eureka
+    - config
+    - openfeign
+    - bus
+    - zipkin
+    - hytrix
+    - gateway
+- 数据库 mysql
+- 缓存 redis
+- 检索 es
+- kafka
+- 分布式事务 seata
+- 分布式锁 redis redisson（zookeeper）
+- 分库分表 sharding
+- 部署 docker  k8s
+- 涉及算法
+    - 生成id snowflake
+    - 缓存穿透 布隆过滤器
+##### 2.  项目模块说明
+- common-activiti            工作流模块
+- common-auth                鉴权模块
+- common-base                基础模块
+- common-cache               缓存模块
+- common-distribute          分布式模块
+    - common-registcenter       注册中心
+    - config-server             配置中心
+    - router                    路由 模块
+- common-file                文件模块
+- common-generator           代码生成器
+- common-log                 日志模块
+- common-openapi             开放API模块
+- common-search              检索模块
+- common-timedtask           定时任务模块
+- mall                       商城项目
+
+- study-note                 学习记录模块
 3.  xxxx
 
 #### 参与贡献
