@@ -39,10 +39,12 @@
 - 数据库 mysql
 - 缓存 redis
 - 检索 es
-- kafka
+- mq
+    - kafka
+    - rabbitmq
 - 分布式事务 seata
 - 分布式锁 redis redisson（zookeeper）
-- 分库分表 sharding
+- 分库分表 sharding/mycat
 - 部署 docker k8s
 - 涉及算法
   - 生成id snowflake
