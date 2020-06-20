@@ -9,10 +9,10 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.beauty</groupId>
-    <artifactId>common-auth</artifactId>
+    <artifactId>beauty-timedtask</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>common-auth</name>
-    <description>鉴权模块</description>
+    <name>beauty-timedtask</name>
+    <description>定时任务调度模块</description>
 
     <properties>
         <java.version>11</java.version>

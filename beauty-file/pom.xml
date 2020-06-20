@@ -9,10 +9,10 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.beauty</groupId>
-    <artifactId>common-cache</artifactId>
+    <artifactId>beauty-file</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>common-cache</name>
-    <description>缓存模块 redis</description>
+    <name>beauty-file</name>
+    <description>文件模块</description>
 
     <properties>
         <java.version>11</java.version>
@@ -21,13 +21,15 @@
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-data-redis</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-devtools</artifactId>
+            <scope>runtime</scope>
+            <optional>true</optional>
+        </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>

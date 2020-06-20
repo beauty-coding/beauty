@@ -4,14 +4,14 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>com.beauty</groupId>
-        <artifactId>common-base</artifactId>
+        <artifactId>beauty-base</artifactId>
         <version>0.0.1-SNAPSHOT</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.beauty</groupId>
-    <artifactId>common-registcenter</artifactId>
+    <artifactId>beauty-servercenter</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>common-registcenter</name>
+    <name>beauty-servercenter</name>
     <description>注册中心</description>
 
     <dependencies>

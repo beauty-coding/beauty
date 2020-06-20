@@ -9,20 +9,16 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.beauty</groupId>
-    <artifactId>common-search</artifactId>
+    <artifactId>beauty-generator</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>common-search</name>
-    <description>检索模块</description>
+    <name>beauty-generator</name>
+    <description>代码生成模块</description>
 
     <properties>
         <java.version>11</java.version>
     </properties>
 
     <dependencies>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-data-elasticsearch</artifactId>
-        </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
