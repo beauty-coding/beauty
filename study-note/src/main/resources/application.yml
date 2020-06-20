@@ -1,7 +1,0 @@
-
-
-server:
-  port: 8083
-spring:
-  redis:
-    url: 127.0.0.1:6379

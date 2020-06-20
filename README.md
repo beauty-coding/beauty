@@ -1,10 +1,12 @@
 # beauty
 
 #### 介绍
-java私有仓库，
-包含：
-技术demo测试源码
-开源项目
+
+- 此项目是 分布式微服务的  web 项目脚手架
+
+- 基于 当前 主流 前后端 框架； 
+
+- 实现 开发人员 通过简单配置 一键搭建， 快速开发
 
 #### 软件架构
 软件架构说明
@@ -16,17 +18,24 @@ java私有仓库，
 2.  xxxx
 3.  xxxx
 
+
 #### 使用说明
 
-##### 1.  技术栈
-spring cloud
-    - eureka
-    - config
-    - openfeign
-    - bus
-    - zipkin
-    - hytrix
-    - gateway
+##### 1. 技术选型 依据
+
+
+
+##### 2. 技术栈
+
+- spring cloud 
+  - eureka 
+  - config 
+  -  openfeign 
+  -  bus 
+  -  zipkin 
+  -  hytrix 
+  -  gateway
+
 - 数据库 mysql
 - 缓存 redis
 - 检索 es
@@ -34,30 +43,30 @@ spring cloud
 - 分布式事务 seata
 - 分布式锁 redis redisson（zookeeper）
 - 分库分表 sharding
-- 部署 docker  k8s
+- 部署 docker k8s
 - 涉及算法
-    - 生成id snowflake
-    - 缓存穿透 布隆过滤器
-##### 2.  项目模块说明
-- common-activiti            工作流模块
-- common-auth                鉴权模块
-- common-base                基础模块
-- common-cache               缓存模块
-- common-distribute          分布式模块
-    - common-registcenter       注册中心
-    - config-server             配置中心
-    - router                    路由 模块
-- common-file                文件模块
-- common-generator           代码生成器
-- common-log                 日志模块
-- common-openapi             开放API模块
-- common-search              检索模块
-- common-timedtask           定时任务模块
-- mall                       商城项目
+  - 生成id snowflake
+  - 缓存穿透 布隆过滤器
 
-- study-note                 学习记录模块
-3.  xxxx
+##### 3. 项目模块说明
 
+| 模块名 | 描述 |
+| ---- | ---- |
+| beauty-flow |工作流/审批流模块|
+| beauty-auth |鉴权模块|
+| beauty-base |基础模块|
+| beauty-cache |缓存模块|
+| beauty-distribute |分布式模块|
+ |-- beauty-registcenter |注册中心|
+ |-- beauty-config-server |配置中心|
+ |-- beauty-router |路由 模块|
+| beauty-file |文件模块|
+| beauty-generator |代码生成器|
+| beauty-log |日志系统模块|
+| beauty-openapi |开放API模块|
+| beauty-search |检索模块|
+| beauty-timedtask |定时任务模块|
+| beauty-front |前端部分|
 #### 参与贡献
 
 1.  Fork 本仓库
