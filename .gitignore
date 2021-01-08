@@ -30,3 +30,8 @@ hs_err_pid*
 .idea/misc.xml
 .idea/modules.xml
 .idea/vcs.xml
+/*/target/
+/beauty-distribute/*/target/
+/beauty-distribute/beauty-configserver/target/
+**.iml
+.idea
