@@ -3,12 +3,11 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>com.beauty.beauty</groupId>
-        <artifactId>mall</artifactId>
+        <groupId>com.beauty</groupId>
+        <artifactId>parent</artifactId>
         <version>0.0.1-SNAPSHOT</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>com.beauty</groupId>
     <artifactId>beauty-configserver</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>beauty-configserver</name>
@@ -16,10 +15,7 @@
 
 
     <dependencies>
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-config-server</artifactId>
-        </dependency>
+
 
         <dependency>
             <groupId>org.springframework.cloud</groupId>
@@ -27,10 +23,7 @@
         </dependency>
 
         <!-- springcloud-bus依赖实现配置自动更新，kafka -->
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-bus-kafka</artifactId>
-        </dependency>
+
         <!--actuator-->
         <dependency>
             <groupId>org.springframework.boot</groupId>

@@ -3,51 +3,42 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>com.beauty</groupId>
-        <artifactId>parent</artifactId>
-        <version>0.0.1-SNAPSHOT</version>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.2.6.RELEASE</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <artifactId>beauty-base</artifactId>
+    <groupId>com.beauty</groupId>
+    <artifactId>parent</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>beauty-base</name>
-    <description>基础模块</description>
     <packaging>pom</packaging>
+    <name>parent</name>
+    <description>基础pom</description>
 
+    <modules>
+        <module>beauty-distribute/beauty-router</module>
+        <module>beauty-distribute/beauty-servercenter</module>
+        <module>beauty-distribute/beauty-configserver</module>
+        <module>beauty-timedtask</module>
+        <module>beauty-auth</module>
+        <module>beauty-base</module>
+        <module>beauty-cache</module>
+        <module>beauty-file</module>
+        <module>beauty-flow</module>
+        <module>beauty-generator</module>
+        <module>beauty-log</module>
+        <module>beauty-openapi</module>
+        <module>beauty-search</module>
+    </modules>
 
     <properties>
-        <java.version>11</java.version>
+        <java.version>14</java.version>
+        <maven.compiler.target>14</maven.compiler.target>
+        <maven.compiler.source>14</maven.compiler.source>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <spring-cloud.version>Greenwich.SR5</spring-cloud.version>
     </properties>
 
-    <dependencies>
-
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-devtools</artifactId>
-            <scope>runtime</scope>
-            <optional>true</optional>
-        </dependency>
-        <!--kafka-->
-        <dependency>
-            <groupId>org.springframework.kafka</groupId>
-            <artifactId>spring-kafka</artifactId>
-            <version>2.3.7.RELEASE</version>
-        </dependency>
-<!--        <dependency>-->
-<!--            <groupId>org.springframework.kafka</groupId>-->
-<!--            <artifactId>spring-kafka-test</artifactId>-->
-<!--            <scope>test</scope>-->
-<!--        </dependency>-->
-
-
-
-    </dependencies>
 
     <dependencyManagement>
         <dependencies>
