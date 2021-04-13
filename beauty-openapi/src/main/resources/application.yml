@@ -1,0 +1,9 @@
+server:
+  port: 60081
+
+
+# swagger3.0
+springfox:
+  documentation:
+    swagger-ui:
+      enabled: true # true放开api文档，false关闭api文档
