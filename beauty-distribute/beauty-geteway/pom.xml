@@ -8,10 +8,10 @@
         <version>0.0.1-SNAPSHOT</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <artifactId>beauty-router</artifactId>
+    <artifactId>beauty-gateway</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>beauty-router</name>
-    <description>路由模块</description>
+    <name>beauty-gateway</name>
+    <description>网关模块</description>
 
     <dependencies>
 <!--        <dependency>-->

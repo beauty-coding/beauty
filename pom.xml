@@ -16,7 +16,7 @@
     <description>基础pom</description>
 
     <modules>
-        <module>beauty-distribute/beauty-router</module>
+        <module>beauty-distribute/beauty-gateway</module>
         <module>beauty-distribute/beauty-servercenter</module>
         <module>beauty-distribute/beauty-configserver</module>
         <module>beauty-timedtask</module>
@@ -32,9 +32,9 @@
     </modules>
 
     <properties>
-        <java.version>14</java.version>
-        <maven.compiler.target>14</maven.compiler.target>
-        <maven.compiler.source>14</maven.compiler.source>
+        <java.version>11</java.version>
+        <maven.compiler.target>11</maven.compiler.target>
+        <maven.compiler.source>11</maven.compiler.source>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <spring-cloud.version>Greenwich.SR5</spring-cloud.version>
     </properties>

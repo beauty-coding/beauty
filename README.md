@@ -30,11 +30,11 @@
 - spring cloud 
   - eureka 
   - config 
-  -  openfeign 
-  -  bus 
-  -  zipkin 
-  -  hytrix 
-  -  gateway
+  - openfeign 
+  - bus 
+  - zipkin 
+  - hytrix 
+  - gateway
 
 - 数据库 mysql
 - 缓存 redis
@@ -61,7 +61,7 @@
 | beauty-distribute |分布式模块|
  |-- beauty-registcenter |注册中心|
  |-- beauty-config-server |配置中心|
- |-- beauty-router |路由 模块|
+ |-- beauty-geteway |网关 模块|
 | beauty-file |文件模块|
 | beauty-generator |代码生成器|
 | beauty-log |日志系统模块|

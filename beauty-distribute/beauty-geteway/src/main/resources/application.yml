@@ -1,13 +1,11 @@
 server:
   port: 60020
 
-
-
 spring:
   application:
     name: router-gateway
   cloud:
-    gateway:
+    gateway:s
       discovery:
         locator:
           enabled: true

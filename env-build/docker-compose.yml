@@ -34,4 +34,4 @@ services:
       - "60020:60020"  #暴露的端口信息和docker run -d -p 80:80 一样
     restart: "always" #重启策略，能够使服务保持始终运行，生产环境推荐使用
     container_name: router #容器名称
-    build: ./router
+    build: gateway
